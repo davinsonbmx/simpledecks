@@ -1,14 +1,61 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Simple</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<title>Simple</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Plantilla básica de Bootstrap</title>
+
+    <!-- CSS de Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 </head>
 <body>
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 
-<%= yield %>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<img src= "https://scontent.feoh1-1.fna.fbcdn.net/v/t1.0-9/78794221_3293607850713169_7514871932412493824_n.jpg?_nc_cat=106&_nc_ohc=hRUG4bt1coEAQkAx_4NaiQluCfivIAkYc4X7ogo8pdbSPzJtZ6AETtmPA&_nc_ht=scontent.feoh1-1.fna&oh=f3a79442c7cb2f63729cfe2f6463a0d1&oe=5EA4CC3A" class="img-circle" alt="Cinque Terre" width="30" height="30">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			    <span class="sr-only">Toggle navigation</span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="/">Project name</a>
+			</div>
+			<div id="navbar" class="navbar-nav mr-auto">
+			  <ul class="nav navbar-nav">
 
+			    <li class="active"><a href="/articles">Home</a></li>
+
+			    <li><a href="#">About</a></li>
+			    <li><a href="#">Contact</a></li>
+			  </ul>
+
+			</div>
+			<div clas="form-inline my-2 my-lg-0">
+				<ul class="right"><p class="navbar-text float-right">
+					
+					</p>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+    
+	<main role="main" class="container">
+		<br><br><br><br>
+		 <div class="starter-template">
+
+			<%= yield %>
+		</div>
+	</main>
 </body>
 </html>
