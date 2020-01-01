@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
  	#load_and_authorize_resource
- 	before_action :authenticate_user!, only: [:edit, :update, :destroy]
+ 	before_action :authenticate_user!, only: [:new, :edit, :update, :destroy]
  	#load_and_authorize_resource
  	#http_basic_authenticate_with name: "q", password: "q", except: [:index, :show]
 
